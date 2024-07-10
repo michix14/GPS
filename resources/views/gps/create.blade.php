@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add GPS Data</title>
+    <title>SIG</title>
 </head>
 <body>
-    <h1>Add GPS Data</h1>
+    <h1>Agregar</h1>
     <form action="{{ route('gps.store') }}" method="POST">
         @csrf
-        <label>Latitude:</label>
+        <label>Latitud:</label>
         <input type="text" id="latitude" name="latitude"><br><br>
-        <label>Longitude:</label>
+        <label>Longitud:</label>
         <input type="text" id="longitude" name="longitude"><br><br>
         <label>Placa:</label>
         <input type="text" name="placa"><br><br>
@@ -19,9 +19,9 @@
         <input type="number" name="bajan"><br><br>
         <label>Linea:</label>
         <input type="text" name="linea"><br><br>
-        <button type="submit">Submit</button>
+        <button type="submit">Guardar</button>
     </form>
-    <a href="{{ route('gps.index') }}">Back</a>
+    <a href="{{ route('gps.index') }}">Atras</a>
 
     <script>
         if (navigator.geolocation) {
@@ -30,7 +30,7 @@
                 document.getElementById('longitude').value = position.coords.longitude;
             });
         } else {
-            alert("Geolocation is not supported by this browser.");
+            alert("Geolocalizacion no es soportada por este dispositivo.");
         }
     </script>
 </body>
