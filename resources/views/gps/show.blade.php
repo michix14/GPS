@@ -54,11 +54,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>View GPS Data</h1>
+        <h1>Ver datos</h1>
         <div class="data">
             <p><strong>ID:</strong> {{ $gps->id }}</p>
-            <p><strong>Latitude:</strong> {{ $gps->latitude }}</p>
-            <p><strong>Longitude:</strong> {{ $gps->longitude }}</p>
+            <p><strong>Latitud:</strong> {{ $gps->latitude }}</p>
+            <p><strong>Longitud:</strong> {{ $gps->longitude }}</p>
             <p><strong>Placa:</strong> {{ $gps->placa }}</p>
             <p><strong>Suben:</strong> {{ $gps->suben }}</p>
             <p><strong>Bajan:</strong> {{ $gps->bajan }}</p>
